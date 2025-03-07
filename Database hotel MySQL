@@ -22,3 +22,16 @@ CREATE TABLE prenotazioni (
     FOREIGN KEY (id_utente) REFERENCES utenti(id),
     FOREIGN KEY (id_camera) REFERENCES camere(id)
 );
+
+
+Inserimento ospite
+INSERT INTO utenti (nome, email)
+VALUES ('Mario Rossi', 'mario.rossi@email.com');
+
+Insermento camera
+INSERT INTO camere (tipo, prezzo)
+VALUES ('Suite', 150.00);
+
+Prenotazione
+INSERT INTO prenotazioni (id_utente, id_camera, check_in, check_out,)
+VALUES (1, 1, '2023-04-01', '2023-04-05);
